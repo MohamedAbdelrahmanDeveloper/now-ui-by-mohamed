@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-me : 51, 5, 91; 
+}
+
+.conta-me {
+  @apply container px-4 md:max-w-7xl md:mx-auto ;
+}
+
+*[class*="space-x"] {
+  @apply rtl:space-x-reverse
+}
+
+ul#navMenu {
+  @apply absolute duration-300 md:relative top-0 right-0 p-4 md:p-0 w-[70vw] h-screen md:h-auto bg-gradient-to-b from-[#f18562] to-[#363735] md:to-transparent md:from-transparent md:w-auto flex flex-col space-y-8 md:space-y-0 md:flex-row md:space-x-2 text-[0.7142em] text-gray-100
+}
+ul#navMenu a {
+  @apply block md:inline w-full md:w-auto px-3 py-3 hover:bg-gray-100 hover:bg-opacity-25 duration-200 rounded
+}
+
+.footer-links a {
+  @apply hover:text-orange
+}
